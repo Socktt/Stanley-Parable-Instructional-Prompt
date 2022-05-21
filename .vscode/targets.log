@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sat May 21 14:02:21 2022
+# Make data base, printed on Sat May 21 17:44:59 2022
 
 # Variables
 
@@ -18,7 +18,6 @@ LC_ALL = C
 NO_AT_BRIDGE = 1
 # environment
 VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-b9160adb-2add-450e-a2c3-6c89def09bf4.sock
- 
 # environment
 VSCODE_CWD = /home/socktt
 # environment
@@ -62,7 +61,7 @@ VSCODE_PIPE_LOGGING = true
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # makefile (from 'Makefile', line 4)
-REMOVABLE = kernel_entry.o kernel.o gdt.o idt.o isr.o isrc.o irq.o irqc.o tss.o timer.o kb.o port_io.o vga.o system.o prompt.o full_kernel.bin empty_end.bin instructionalPrompt.bin boot.bin
+REMOVABLE = kernel_entry.o kernel.o idt.o isr.o isrc.o irq.o irqc.o timer.o kb.o port_io.o vga.o system.o prompt.o full_kernel.bin empty_end.bin instructionalPrompt.bin boot.bin
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
@@ -96,7 +95,7 @@ VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupp
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # makefile (from 'Makefile', line 2)
-OBJS = kernel_entry.o kernel.o gdt.o idt.o isr.o isrc.o irq.o irqc.o tss.o timer.o kb.o port_io.o vga.o system.o prompt.o
+OBJS = kernel_entry.o kernel.o idt.o isr.o isrc.o irq.o irqc.o timer.o kb.o port_io.o vga.o system.o prompt.o
 # makefile
 SHELL = /bin/sh
 # default
@@ -146,7 +145,7 @@ USER = socktt
 # default
 MAKE_VERSION := 4.3
 # makefile (from 'Makefile', line 6)
-SRC_FILES = kernel.c gdt.c idt.c isr.c irq.c kb.c port_io.c vga.c system.c boot.asm empty_end.asm isr.asm irq.asm prompt.c tss.c
+SRC_FILES = kernel.c idt.c isr.c irq.c kb.c port_io.c vga.c system.c boot.asm empty_end.asm isr.asm irq.asm prompt.c
 # environment
 _ = /usr/bin/make
 # environment
@@ -182,7 +181,7 @@ ELECTRON_NO_ATTACH_CONSOLE = 1
 # makefile (from 'Makefile', line 10)
 LINKER_OPTIONS = -Ttext 0x1000 --oformat binary
 # variable set hash-table stats:
-# Load=85/1024=8%, Rehash=0, Collisions=6/134=4%
+# Load=85/1024=8%, Rehash=0, Collisions=6/132=5%
 
 # Pattern-specific Variable Values
 
@@ -190,9 +189,9 @@ LINKER_OPTIONS = -Ttext 0x1000 --oformat binary
 
 # Directories
 
-# . (device 2068, inode 8524718): 37 files, no impossibilities.
+# . (device 2068, inode 8524718): 53 files, no impossibilities.
 
-# 37 files, no impossibilities in 1 directories.
+# 53 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -240,7 +239,7 @@ isrc.o:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-21 14:00:32.26168396
+#  Last modified 2022-05-21 17:39:55.214706944
 #  File has been updated.
 #  Successfully updated.
 
@@ -254,7 +253,7 @@ isr.asm:
 # Not a target:
 prompt.c:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-21 13:57:29.185021616
+#  Last modified 2022-05-21 17:36:08.011378967
 #  File has been updated.
 #  Successfully updated.
 
@@ -271,11 +270,11 @@ empty_end.bin:
 #  Modification time never checked.
 #  File has not been updated.
 
-clean: kernel_entry.o kernel.o gdt.o idt.o isr.o isrc.o irq.o irqc.o tss.o timer.o kb.o port_io.o vga.o system.o prompt.o full_kernel.bin empty_end.bin instructionalPrompt.bin boot.bin
+clean: kernel_entry.o kernel.o idt.o isr.o isrc.o irq.o irqc.o timer.o kb.o port_io.o vga.o system.o prompt.o full_kernel.bin empty_end.bin instructionalPrompt.bin boot.bin
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 36):
+#  recipe to execute (from 'Makefile', line 34):
 	rm $(REMOVABLE)
 
 # Not a target:
@@ -291,23 +290,12 @@ timer.o:
 #  File has not been updated.
 
 # Not a target:
-gdt.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
 vga.c:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-21 13:57:29.185021616
+ 
+#  Last modified 2022-05-21 14:51:51.311611363
 #  File has been updated.
 #  Successfully updated.
-
-# Not a target:
-tss.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
 
 # Not a target:
 system.o:
@@ -348,9 +336,8 @@ isr.c:
 #  File has been updated.
 #  Successfully updated.
 
-all: kernel.c gdt.c idt.c isr.c irq.c kb.c port_io.c vga.c system.c boot.asm empty_end.asm isr.asm irq.asm prompt.c tss.c
+all: kernel.c idt.c isr.c irq.c kb.c port_io.c vga.c system.c boot.asm empty_end.asm isr.asm irq.asm prompt.c
 #  Command line target.
- 
 #  Implicit rule search has not been done.
 #  Implicit/static pattern stem: ''
 #  File does not exist.
@@ -363,17 +350,17 @@ all: kernel.c gdt.c idt.c isr.c irq.c kb.c port_io.c vga.c system.c boot.asm emp
 # automatic
 # < := kernel.c
 # automatic
-# + := kernel.c gdt.c idt.c isr.c irq.c kb.c port_io.c vga.c system.c boot.asm empty_end.asm isr.asm irq.asm prompt.c tss.c
+# + := kernel.c idt.c isr.c irq.c kb.c port_io.c vga.c system.c boot.asm empty_end.asm isr.asm irq.asm prompt.c
 # automatic
 # % := 
 # automatic
-# ^ := kernel.c gdt.c idt.c isr.c irq.c kb.c port_io.c vga.c system.c boot.asm empty_end.asm isr.asm irq.asm prompt.c tss.c
+# ^ := kernel.c idt.c isr.c irq.c kb.c port_io.c vga.c system.c boot.asm empty_end.asm isr.asm irq.asm prompt.c
 # automatic
-# ? := kernel.c gdt.c idt.c isr.c irq.c kb.c port_io.c vga.c system.c boot.asm empty_end.asm isr.asm irq.asm prompt.c tss.c
+# ? := kernel.c idt.c isr.c irq.c kb.c port_io.c vga.c system.c boot.asm empty_end.asm isr.asm irq.asm prompt.c
 # automatic
 # | := 
 # variable set hash-table stats:
-# Load=8/32=25%, Rehash=0, Collisions=1/25=4%
+# Load=8/32=25%, Rehash=0, Collisions=1/23=4%
 #  recipe to execute (from 'Makefile', line 13):
 	nasm -f bin boot.asm -o boot.bin
 	nasm -f bin empty_end.asm -o empty_end.bin
@@ -381,11 +368,9 @@ all: kernel.c gdt.c idt.c isr.c irq.c kb.c port_io.c vga.c system.c boot.asm emp
 	nasm -f elf isr.asm -o isr.o
 	nasm -f elf irq.asm -o irq.o
 	i686-elf-gcc $(COMPILER_OPTIONS) "kernel.c" -o "kernel.o"
-	i686-elf-gcc $(COMPILER_OPTIONS) "gdt.c" -o "gdt.o"
 	i686-elf-gcc $(COMPILER_OPTIONS) "idt.c" -o "idt.o"
 	i686-elf-gcc $(COMPILER_OPTIONS) "isr.c" -o "isrc.o"
 	i686-elf-gcc $(COMPILER_OPTIONS) "irq.c" -o "irqc.o"
-	i686-elf-gcc $(COMPILER_OPTIONS) "tss.c" -o "tss.o"
 	i686-elf-gcc $(COMPILER_OPTIONS) "timer.c" -o "timer.o"
 	i686-elf-gcc $(COMPILER_OPTIONS) "kb.c" -o "kb.o"
 	i686-elf-gcc $(COMPILER_OPTIONS) "port_io.c" -o "port_io.o"
@@ -396,13 +381,6 @@ all: kernel.c gdt.c idt.c isr.c irq.c kb.c port_io.c vga.c system.c boot.asm emp
 	cat "boot.bin" "full_kernel.bin" "empty_end.bin" > "instructionalPrompt.bin"
 	qemu-system-x86_64 instructionalPrompt.bin
 	# bochs -f bochs.cfg
-
-# Not a target:
-tss.c:
-#  Implicit rule search has been done.
-#  Last modified 2022-05-21 13:57:29.188354948
-#  File has been updated.
-#  Successfully updated.
 
 # Not a target:
 port_io.o:
@@ -420,14 +398,14 @@ port_io.c:
 # Not a target:
 kb.c:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-21 13:57:29.181688282
+#  Last modified 2022-05-21 17:24:39.601395199
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 kernel.c:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-21 13:59:16.008352427
+#  Last modified 2022-05-21 14:06:57.591674875
 #  File has been updated.
 #  Successfully updated.
 
@@ -435,13 +413,6 @@ kernel.c:
 irq.asm:
 #  Implicit rule search has been done.
 #  Last modified 2022-05-21 13:57:29.181688282
-#  File has been updated.
-#  Successfully updated.
-
-# Not a target:
-gdt.c:
-#  Implicit rule search has been done.
-#  Last modified 2022-05-21 13:57:29.188354948
 #  File has been updated.
 #  Successfully updated.
 
@@ -495,19 +466,19 @@ kernel_entry.o:
 #  File has not been updated.
 
 # files hash-table stats:
-# Load=39/1024=4%, Rehash=0, Collisions=0/85=0%
+# Load=35/1024=3%, Rehash=0, Collisions=0/77=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 62 / storage = 535 B / avg = 8 B
-# current buf: size = 8162 B / used = 535 B / count = 62 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 59 / storage = 516 B / avg = 8 B
+# current buf: size = 8162 B / used = 516 B / count = 59 / avg = 8 B
 
-# strcache performance: lookups = 85 / hit rate = 27%
+# strcache performance: lookups = 97 / hit rate = 39%
 # hash-table stats:
-# Load=62/8192=1%, Rehash=0, Collisions=0/85=0%
-# Finished Make data base on Sat May 21 14:02:21 2022
+# Load=59/8192=1%, Rehash=0, Collisions=0/97=0%
+# Finished Make data base on Sat May 21 17:44:59 2022
 
  

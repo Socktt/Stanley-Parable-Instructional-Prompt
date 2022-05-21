@@ -1,4 +1,3 @@
-#include "gdt.h"
 #include "idt.h"
 #include "vga.h"
 #include "system.h"
