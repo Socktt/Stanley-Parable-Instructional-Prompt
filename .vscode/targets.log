@@ -1,0 +1,513 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 4.3
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2020 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Sat May 21 14:02:21 2022
+
+# Variables
+
+# environment
+GDK_BACKEND = x11
+# environment
+LC_ALL = C
+# environment
+NO_AT_BRIDGE = 1
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-b9160adb-2add-450e-a2c3-6c89def09bf4.sock
+ 
+# environment
+VSCODE_CWD = /home/socktt
+# environment
+WINDOWPATH = 1
+# default
+MAKE_COMMAND := make
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+.VARIABLES := 
+# environment
+PWD = /home/socktt/programming/stanleyParableInstructionalPrompt
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+MAIL = /var/spool/mail/socktt
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+VSCODE_LOG_STACK = false
+# automatic
+%F = $(notdir $%)
+# environment
+VSCODE_CODE_CACHE_PATH = /home/socktt/.config/Code - OSS/CachedData/da15b6fd3ef856477bf6f4fb29ba1b7af717770d
+# environment
+LANG = C
+# environment
+XAUTHORITY = /home/socktt/.Xauthority
+# default
+.LOADED := 
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# makefile
+MAKEFLAGS = pqrR
+# makefile
+CURDIR := /home/socktt/programming/stanleyParableInstructionalPrompt
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# makefile (from 'Makefile', line 4)
+REMOVABLE = kernel_entry.o kernel.o gdt.o idt.o isr.o isrc.o irq.o irqc.o tss.o timer.o kb.o port_io.o vga.o system.o prompt.o full_kernel.bin empty_end.bin instructionalPrompt.bin boot.bin
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+MFLAGS = -pqrR
+# default
+.SHELLFLAGS := -c
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST := Makefile
+# automatic
+@F = $(notdir $@)
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+VSCODE_PID = 6854
+# environment
+XDG_SESSION_TYPE = tty
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# automatic
+*F = $(notdir $*)
+# environment
+CHROME_DESKTOP = code-oss.desktop
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# makefile (from 'Makefile', line 2)
+OBJS = kernel_entry.o kernel.o gdt.o idt.o isr.o isrc.o irq.o irqc.o tss.o timer.o kb.o port_io.o vga.o system.o prompt.o
+# makefile
+SHELL = /bin/sh
+# default
+MAKECMDGOALS := all
+# environment
+SHLVL = 3
+# makefile (from 'Makefile', line 8)
+COMPILER_OPTIONS = -ffreestanding -m32 -g -c -w
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+PATH = /home/socktt/opt/cross/bin:/home/socktt/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
+# default
+MAKEFILES := 
+# environment
+MOTD_SHOWN = pam
+# automatic
+^F = $(notdir $^)
+# environment
+INVOCATION_ID = e5faf46230184f81a9681ff58537aa4f
+# environment
+VSCODE_LOG_NATIVE = false
+# automatic
+?F = $(notdir $?)
+# environment
+XDG_SEAT = seat0
+# automatic
++F = $(notdir $+)
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+LOGNAME = socktt
+# environment
+XDG_VTNR = 1
+# makefile
+.DEFAULT_GOAL := all
+# environment
+SYSTEMD_EXEC_PID = 480
+# environment
+DISPLAY = :0
+# environment
+USER = socktt
+# default
+MAKE_VERSION := 4.3
+# makefile (from 'Makefile', line 6)
+SRC_FILES = kernel.c gdt.c idt.c isr.c irq.c kb.c port_io.c vga.c system.c boot.asm empty_end.asm isr.asm irq.asm prompt.c tss.c
+# environment
+_ = /usr/bin/make
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# environment
+XDG_SESSION_CLASS = user
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/socktt
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+VSCODE_IPC_HOOK = /run/user/1000/vscode-0a713f18-1.67.1-main.sock
+# environment
+TERM = linux
+# environment
+HG = /usr/bin/hg
+# environment
+XDG_SESSION_ID = 1
+# default
+.RECIPEPREFIX := 
+# automatic
+<F = $(notdir $<)
+# default
+SUFFIXES := 
+# environment
+VSCODE_CLI = 1
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink guile load
+# makefile (from 'Makefile', line 10)
+LINKER_OPTIONS = -Ttext 0x1000 --oformat binary
+# variable set hash-table stats:
+# Load=85/1024=8%, Rehash=0, Collisions=6/134=4%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 2068, inode 8524718): 37 files, no impossibilities.
+
+# 37 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+# Not a target:
+vga.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+irq.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+full_kernel.bin:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+boot.asm:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-21 14:01:03.828349882
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+kernel.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+isrc.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-21 14:00:32.26168396
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+isr.asm:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-21 13:57:29.181688282
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+prompt.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-21 13:57:29.185021616
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+system.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-21 13:57:29.185021616
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+empty_end.bin:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+clean: kernel_entry.o kernel.o gdt.o idt.o isr.o isrc.o irq.o irqc.o tss.o timer.o kb.o port_io.o vga.o system.o prompt.o full_kernel.bin empty_end.bin instructionalPrompt.bin boot.bin
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 36):
+	rm $(REMOVABLE)
+
+# Not a target:
+instructionalPrompt.bin:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+timer.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+gdt.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+vga.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-21 13:57:29.185021616
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+tss.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+system.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+empty_end.asm:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-21 13:57:29.181688282
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+boot.bin:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+idt.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-21 13:57:29.181688282
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+isr.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-21 13:57:29.181688282
+#  File has been updated.
+#  Successfully updated.
+
+all: kernel.c gdt.c idt.c isr.c irq.c kb.c port_io.c vga.c system.c boot.asm empty_end.asm isr.asm irq.asm prompt.c tss.c
+#  Command line target.
+ 
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: ''
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := all
+# automatic
+# * := 
+# automatic
+# < := kernel.c
+# automatic
+# + := kernel.c gdt.c idt.c isr.c irq.c kb.c port_io.c vga.c system.c boot.asm empty_end.asm isr.asm irq.asm prompt.c tss.c
+# automatic
+# % := 
+# automatic
+# ^ := kernel.c gdt.c idt.c isr.c irq.c kb.c port_io.c vga.c system.c boot.asm empty_end.asm isr.asm irq.asm prompt.c tss.c
+# automatic
+# ? := kernel.c gdt.c idt.c isr.c irq.c kb.c port_io.c vga.c system.c boot.asm empty_end.asm isr.asm irq.asm prompt.c tss.c
+# automatic
+# | := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/25=4%
+#  recipe to execute (from 'Makefile', line 13):
+	nasm -f bin boot.asm -o boot.bin
+	nasm -f bin empty_end.asm -o empty_end.bin
+	nasm -f elf kernel_entry.asm -o kernel_entry.o
+	nasm -f elf isr.asm -o isr.o
+	nasm -f elf irq.asm -o irq.o
+	i686-elf-gcc $(COMPILER_OPTIONS) "kernel.c" -o "kernel.o"
+	i686-elf-gcc $(COMPILER_OPTIONS) "gdt.c" -o "gdt.o"
+	i686-elf-gcc $(COMPILER_OPTIONS) "idt.c" -o "idt.o"
+	i686-elf-gcc $(COMPILER_OPTIONS) "isr.c" -o "isrc.o"
+	i686-elf-gcc $(COMPILER_OPTIONS) "irq.c" -o "irqc.o"
+	i686-elf-gcc $(COMPILER_OPTIONS) "tss.c" -o "tss.o"
+	i686-elf-gcc $(COMPILER_OPTIONS) "timer.c" -o "timer.o"
+	i686-elf-gcc $(COMPILER_OPTIONS) "kb.c" -o "kb.o"
+	i686-elf-gcc $(COMPILER_OPTIONS) "port_io.c" -o "port_io.o"
+	i686-elf-gcc $(COMPILER_OPTIONS) "vga.c" -o "vga.o"
+	i686-elf-gcc $(COMPILER_OPTIONS) "system.c" -o "system.o"
+	i686-elf-gcc $(COMPILER_OPTIONS) "prompt.c" -o "prompt.o"
+	i686-elf-ld -o "full_kernel.bin" $(OBJS) $(LINKER_OPTIONS)
+	cat "boot.bin" "full_kernel.bin" "empty_end.bin" > "instructionalPrompt.bin"
+	qemu-system-x86_64 instructionalPrompt.bin
+	# bochs -f bochs.cfg
+
+# Not a target:
+tss.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-21 13:57:29.188354948
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+port_io.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+port_io.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-21 13:57:29.185021616
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+kb.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-21 13:57:29.181688282
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+kernel.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-21 13:59:16.008352427
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+irq.asm:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-21 13:57:29.181688282
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+gdt.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-21 13:57:29.188354948
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+isr.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+idt.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kb.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+prompt.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+irq.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-21 13:57:29.181688282
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+irqc.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kernel_entry.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=39/1024=4%, Rehash=0, Collisions=0/85=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 62 / storage = 535 B / avg = 8 B
+# current buf: size = 8162 B / used = 535 B / count = 62 / avg = 8 B
+
+# strcache performance: lookups = 85 / hit rate = 27%
+# hash-table stats:
+# Load=62/8192=1%, Rehash=0, Collisions=0/85=0%
+# Finished Make data base on Sat May 21 14:02:21 2022
+
+ 

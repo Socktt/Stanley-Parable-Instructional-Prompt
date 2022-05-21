@@ -1,0 +1,2 @@
+void promptInit();
+void newInput();
